@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Diganta &amp; Doly – Wedding Invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf5e4;--card:#fffcf2;--ink:#3a2e17;--soft:#7d6a45;--gold:#b8860b;--line:#e8d9ae;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1709;--card:#272010;--ink:#f6ecce;--soft:#c3b184;--gold:#e0b84a;--line:#42381c}}
+:root[data-theme="dark"]{--bg:#1c1709;--card:#272010;--ink:#f6ecce;--soft:#c3b184;--gold:#e0b84a;--line:#42381c}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Jost,system-ui,sans-serif;font-weight:300;text-align:center;line-height:1.7}
+h1,h2,.serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400}
+#cover{position:fixed;inset:0;z-index:9;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;transition:opacity .8s,visibility .8s;padding:24px}
+#cover.gone{opacity:0;visibility:hidden}
+.seal{width:120px;height:120px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f0d27a,#a47a14);color:#fff;display:flex;align-items:center;justify-content:center;font:italic 600 38px 'Cormorant Garamond',serif;border:0;cursor:pointer;box-shadow:0 8px 26px rgba(0,0,0,.28);animation:pulse 2s infinite}
+@keyframes pulse{50%{transform:scale(1.07)}}
+.hint{letter-spacing:.3em;font-size:12px;text-transform:uppercase;color:var(--soft)}
+section{max-width:520px;margin:0 auto;padding:56px 24px;border-bottom:1px solid var(--line)}
+.small{letter-spacing:.3em;font-size:12px;text-transform:uppercase;color:var(--gold)}
+h1{font-size:52px;line-height:1.1;margin:14px 0}
+h1 i{display:block;font-size:30px;color:var(--gold)}
+h2{font-size:34px;margin:8px 0 22px}
+.date{font-size:22px;letter-spacing:.2em;color:var(--gold)}
+.orn{color:var(--gold);font-size:24px;margin:10px 0}
+.cd{display:flex;justify-content:center;gap:10px}
+.cd div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 4px;width:76px}
+.cd b{display:block;font:600 34px 'Cormorant Garamond',serif;color:var(--gold)}
+.cd span{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--soft)}
+.ev{display:flex;justify-content:space-between;padding:14px 4px;border-bottom:1px dashed var(--line);font-size:17px}
+.ev span:last-child{color:var(--gold)}
+a.btn,button.btn{display:inline-block;margin:14px 5px 0;background:var(--gold);color:#fff;border:0;border-radius:30px;padding:12px 28px;font:400 15px Jost,sans-serif;letter-spacing:.08em;text-decoration:none;cursor:pointer}
+a.btn.alt{background:transparent;color:var(--gold);border:1px solid var(--gold)}
+input,select{width:100%;margin:6px 0;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit}
+.fade{opacity:0;transform:translateY(24px);transition:all .9s}.fade.in{opacity:1;transform:none}
+footer{padding:40px 24px 60px}
+</style></head><body>
+<div id="cover"><div class="hint">You are invited</div><div class="serif" style="font-size:34px">Diganta &amp; Doly</div>
+<button class="seal" id="open" aria-label="Open invitation">D&amp;D</button><div class="hint">Tap to open</div></div>
+
+<section><div class="small">Wedding Day</div><h1>Diganta Tripura<i>&amp;</i>Doly Tripura</h1>
+<div class="orn">❦</div><div class="date">17 . 01 . 2027</div>
+<p class="serif" style="font-size:23px;font-style:italic;margin-top:22px;color:var(--gold)">Two hearts, one dream,<br>a new journey begins with love.</p>
+<p>Dear family and well-wishers, your presence and blessings on this beautiful day will make our joy complete.</p></section>
+
+<section class="fade"><div class="small">The celebration begins in</div><h2>Countdown</h2>
+<div class="cd"><div><b id="d">0</b><span>Days</span></div><div><b id="h">0</b><span>Hrs</span></div><div><b id="m">0</b><span>Min</span></div><div><b id="s">0</b><span>Sec</span></div></div></section>
+
+<section class="fade"><div class="small">Programme</div><h2>Schedule of Events</h2>
+<div class="ev"><span>Guest Arrival</span><span>10:00 AM</span></div>
+<div class="ev"><span>Ring Ceremony</span><span>12:00 PM</span></div>
+<div class="ev"><span>Lunch</span><span>2:00 PM</span></div></section>
+
+<section class="fade"><div class="small">Venue</div><h2>Location</h2>
+<div class="serif" style="font-size:26px">Our Home</div>
+<p>Masterpara</p>
+<a class="btn" href="https://maps.app.goo.gl/XhFsBBDqNhtxRimo7" target="_blank" rel="noopener">Open in Maps</a></section>
+
+<section class="fade"><div class="small">Kindly let us know</div><h2>Confirm Your Attendance</h2>
+<input id="n" placeholder="Your name">
+<select id="a"><option>Accepts with pleasure</option><option>Declines with regret</option></select>
+<input id="g" type="number" min="1" placeholder="Number of guests">
+<button class="btn" id="go">Reply on WhatsApp</button>
+<a class="btn alt" href="tel:+8801581149235">Call Us</a></section>
+
+<footer><div class="orn">❦</div><div class="serif" style="font-size:28px;font-style:italic;color:var(--gold)">Hope to see you there!</div><div style="margin-top:10px">Diganta &amp; Doly</div><div style="color:var(--soft)">Contact: 01581149235</div></footer>
+
+<script>
+document.getElementById('open').onclick=function(){document.getElementById('cover').classList.add('gone')};
+var T=new Date('2027-01-17T10:00:00+06:00').getTime();
+function tick(){var x=Math.max(0,T-Date.now());
+document.getElementById('d').textContent=Math.floor(x/864e5);
+document.getElementById('h').textContent=Math.floor(x%864e5/36e5);
+document.getElementById('m').textContent=Math.floor(x%36e5/6e4);
+document.getElementById('s').textContent=Math.floor(x%6e4/1e3)}
+tick();setInterval(tick,1000);
+var io=new IntersectionObserver(function(e){e.forEach(function(i){if(i.isIntersecting)i.target.classList.add('in')})},{threshold:.15});
+document.querySelectorAll('.fade').forEach(function(el){io.observe(el)});
+document.getElementById('go').onclick=function(){var n=document.getElementById('n').value.trim();
+if(!n){document.getElementById('n').focus();return}
+var a=document.getElementById('a').value,g=document.getElementById('g').value;
+var t='Hello, I am '+n+'. '+a+(g?'. Guests: '+g+'.':'.');
+window.open('https://wa.me/8801581149235?text='+encodeURIComponent(t),'_blank')};
+</script></body></html>
